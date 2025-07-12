@@ -27,7 +27,7 @@ export function useChat() {
 	/** API配置信息 */
 	const [config, setConfig] = useState<ChatConfig>({
 		apiUrl: "https://ai.huan666.de", // 默认API地址
-		apiKey: "sk-e5MAb3fH4S6DQtd0jTRv6uWbrHCaeSlig4iyNI6rdr8wvB3x", // API密钥，需要用户配置
+		apiKey: "", // API密钥，需要用户在设置中配置
 		model: "gpt-4o-mini", // 默认使用的AI模型
 		temperature: 0.7, // 回复的随机性（0-1）
 		maxTokens: 2000, // 最大token限制
